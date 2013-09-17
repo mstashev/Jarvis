@@ -2,9 +2,11 @@
 
 # This software is still in beta version.
 
-Inspired by the movie “Iron Man” starring Robert Downey Jr, I want to recreate a computer system like Jarvis.
+Inspired by the movie “Iron Man” starring Robert Downey Jr.
 
-Jarvis is a digital life assistant that assists with your daily life by acting as an alarm clock, informing you of the latest news headlines and the forecast of the weather for the next 5 days amongst other things as well as more in the future.
+I want to recreate a computer system like Jarvis that will be able to not only act as a digital life assistant that assists with your daily life by acting as an alarm clock, informing you of the latest news headlines and the forecast of the weather for the next 5 days, but also to inform you of any other information that you would like to know.
+
+My endgame for this app is to have it be similar to [Chad Barraford's version](http://engt.co/ck1Ijn) but open-sourced for the public.
 
 
 For the moment the application can do:
