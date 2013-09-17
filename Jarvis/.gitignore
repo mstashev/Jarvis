@@ -1,0 +1,63 @@
+# Build and Release Folders
+bin-debug/
+bin-release/
+
+# Project property files
+.actionScriptProperties
+.flexProperties
+.settings/
+.project
+
+# Mac OS X hidden files
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspective
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+
+
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+project.xcworkspace/
+# Generated files
+VersionX-revision.h
+# build products
+*.[oa]
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+
+# Other Files
+About/20120215-mh7681yx19ff77j8a5ydnncd7b.jpg
+
+About/code for the about winodw.txt
+
+scripts/build_release.sh
+
+scripts/deploy.sh
+
+scripts/sign_update.rb
+
+scripts/sparkle_deploy.sh
