@@ -1,0 +1,195 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana;\f2\fswiss\fcharset0 ArialMT;
+\f3\fscript\fcharset0 BrushScriptMT;}
+{\colortbl;\red255\green255\blue255;\red64\green128\blue0;\red0\green22\blue176;\red0\green0\blue255;
+\red41\green0\blue255;\red76\green78\blue78;}
+\margl1440\margr1440\vieww16440\viewh16900\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\f0\b\fs44 \cf0 Read Me\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0\fs30 \cf0 Hi, thanks for downloading the ASTwitterLibrary! It's extremely simple to use, and works great for regular Applescript or your Applescript Studio project. There are some simple things you must do to get started. \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\b\fs44 \cf0 Getting Started\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\b0\fs30 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 ASTwitterLibrary relies upon ASObject (available from {\field{\*\fldinst{HYPERLINK "http://www.jacomputing.net"}}{\fldrslt www.jacomputing.net}}) for its operation.  Please download the latest version of ASObject and keep its script file alongside the ASTwitterLibrary.scpt file for flawless operation.  There are two ways of running ASTwitterLibrary; the first is by saving your script as an Application and including ASObject and ASTwitterLibrary inside the Resources/Scripts directory of the application.  This model is shown below:\
+\
+1) Place the ASTwitterLibrary.scpt and ASObject.scpt files inside your projects "
+\i Contents:Resources:Scripts:
+\i0 " directory.\
+2) Now in your script you simply have to load the library to access its methods like this:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li2356\fi-2357\pardirnatural
+
+\f1\b\fs24 \cf0 \CocoaLigature0 set
+\b0  \cf2 ASTwitterLib\cf0  
+\b to
+\b0  ((
+\b \cf3 path to
+\b0 \cf0  
+\b me
+\b0 ) & "Contents:Resources:Scripts:ASTwitterLibrary.scpt") 
+\b as
+\b0  
+\i \cf4 string
+\f0\i0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li832\fi-833\pardirnatural
+
+\f1\b \cf5 set
+\f0\b0 \cf0  
+\f1 \cf2 ASTL
+\f0 \cf0  
+\f1\b \cf5 to
+\f0\b0 \cf0  
+\f1 \cf4 load script
+\f0 \cf0  
+\f1 \cf4 alias
+\f0 \cf0  
+\f1 \cf2 ASTwitterLib\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs30 \cf0 \CocoaLigature1 The second method involves loading ASTwitterLibrary and ASObject from separate locations.  This could be useful if you are writing a bunch of scripts and don't want to have to include a copy of ASObject and ASTwitterLibrary with every script.  This model is shown below:\
+\
+1) Load ASObject and ASTwitterLibrary separately using the following commands (ASObject must be named as follows in order for this to work):\
+\
+\pard\tx576\tx1152\tx1728\tx2304\tx2880\tx3456\tx4032\tx4608\tx5184\tx5760\tx6337\tx6913\tx7489\tx8065\tx8641\tx9217\tx9793\tx10369\tx10945\tx11521\tx12097\tx12674\tx13250\tx13826\tx14402\tx14978\tx15554\tx16130\tx16706\tx17282\tx17858\tx18435\tx19011\tx19587\tx20163\tx20739\tx21315\tx21891\tx22467\tx23043\tx23619\tx24195\tx24772\tx25348\tx25924\tx26500\tx27076\tx27652\tx28228\tx28804\tx29380\tx29956\tx30532\tx31109\tx31685\tx32261\tx32837\tx33413\tx33989\tx34565\tx35141\tx35717\tx36293\tx36870\tx37446\tx38022\tx38598\tx39174\tx39750\tx40326\tx40902\tx41478\tx42054\tx42630\tx43207\tx43783\tx44359\tx44935\tx45511\tx46087\tx46663\tx47239\tx47815\tx48391\tx48967\tx49544\tx50120\tx50696\tx51272\tx51848\tx52424\tx53000\tx53576\tx54152\tx54728\tx55305\tx55881\tx56457\tx57033\tx57609\li832\fi-833\pardirnatural
+
+\f1\b\fs24 \cf0 \CocoaLigature0 global
+\b0  \cf2 ASObject\cf0  \cf6 --Place this line near the top of your script, outside of any methods
+\f0\fs30 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li2356\fi-2357\pardirnatural
+
+\f1\b\fs24 \cf0 \CocoaLigature0 set
+\b0  \cf2 ASO\cf0  
+\b to
+\b0  (<Some_Path>:ASObject.scpt") 
+\b as
+\b0  
+\i \cf4 string
+\f0\i0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li832\fi-833\pardirnatural
+
+\f1\b \cf5 set
+\f0\b0 \cf0  
+\f1 \cf2 ASObject
+\f0 \cf0  
+\f1\b \cf5 to
+\f0\b0 \cf0  
+\f1 \cf4 load script
+\f0 \cf0  
+\f1 \cf4 alias
+\f0 \cf0  
+\f1 \cf2 ASO
+\f0\fs30 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li2356\fi-2357\pardirnatural
+
+\f1\b\fs24 \cf0 \CocoaLigature0 set
+\b0  \cf2 ASTL\cf0  
+\b to
+\b0  (<Some_Path>:ASTwitterLibrary.scpt") 
+\b as
+\b0  
+\i \cf4 string
+\f0\i0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li832\fi-833\pardirnatural
+
+\f1\b \cf5 set
+\f0\b0 \cf0  
+\f1 \cf2 ASTwitterLib
+\f0 \cf0  
+\f1\b \cf5 to
+\f0\b0 \cf0  
+\f1 \cf4 load script
+\f0 \cf0  
+\f1 \cf4 alias
+\f0 \cf0  
+\f1 \cf2 ASTL\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs30 \cf0 \CocoaLigature1 Then you can call any of the methods listed in "List of Methods" text file included by doing something like this\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li832\fi-833\pardirnatural
+
+\f1\fs24 \cf2 \CocoaLigature0 ASTwitterLib's
+\f0 \cf0  
+\f1 \cf2 getName\cf0 ("hendo13")\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs30 \cf0 \CocoaLigature1 Which will return "Collin Henderson". You can substitute hendo13 for any username.\
+And that's about it! Easy huh? Have fun!\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\b\fs44 \cf0 Notice to Users\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\b0\fs30 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 Version 2.0 of ASTwitterLibrary uses OAuth to interact with Twitter and other services (eg. Twitpic, YFrog, etc.).  Since these services require private API keys in order to function we have decided to not release the source code for ASTwitterLibrary. However, we have made it possible for you to use your own API keys with ASTwitterLibrary so you can enjoy the ease of integration with ASTwitterLibrary but still brand your own script. \
+\
+To change the API keys used by ASTwitterLibrary make the following calls to your lib variable after loading it in your script:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li1571\fi-1572\pardirnatural
+
+\f1\b\fs24 \cf0 \CocoaLigature0 set
+\b0  \cf2 twitter_keys\cf0  
+\b of
+\b0  \cf2 lib\cf0  
+\b to
+\b0  \{\cf2 consumerKey\cf0 :"adfadfasdfadsfadsfasdf", \cf2 consumerSecret\cf0 :"adfasdfasdfasdfasdfasdf"\}\
+
+\b set
+\b0  \cf2 MOBY_KEY\cf0  
+\b of
+\b0  \cf2 lib\cf0  
+\b to
+\b0  "adfasdfasdfasdfasd"\
+
+\b set
+\b0  \cf2 YFROG_KEY\cf0  
+\b of
+\b0  \cf2 lib\cf0  
+\b to
+\b0  "adsasdfasdfadsfasdfasd"\
+
+\b set
+\b0  \cf2 TWITPIC_KEY\cf0  
+\b of
+\b0  \cf2 lib\cf0  
+\b to
+\b0   "adsfasdfadsfasdfasdfasd" \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs30 \cf0 \CocoaLigature1 You can change one or all the API Keys used by ASTwitterLibrary to reflect your own keys.  Any key(s) that you do not specifically change will continue to function under ASTwitterLibrary's default key(s).
+\f1\fs24 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\tx7280\tx7840\tx8400\tx8960\tx9520\tx10080\tx10640\tx11200\tx11760\tx12320\tx12880\tx13440\tx14000\tx14560\tx15120\tx15680\tx16240\tx16800\tx17360\tx17920\tx18480\tx19040\tx19600\tx20160\tx20720\tx21280\tx21840\tx22400\tx22960\tx23520\tx24080\tx24640\tx25200\tx25760\tx26320\tx26880\tx27440\tx28000\tx28560\tx29120\tx29680\tx30240\tx30800\tx31360\tx31920\tx32480\tx33040\tx33600\tx34160\tx34720\tx35280\tx35840\tx36400\tx36960\tx37520\tx38080\tx38640\tx39200\tx39760\tx40320\tx40880\tx41440\tx42000\tx42560\tx43120\tx43680\tx44240\tx44800\tx45360\tx45920\tx46480\tx47040\tx47600\tx48160\tx48720\tx49280\tx49840\tx50400\tx50960\tx51520\tx52080\tx52640\tx53200\tx53760\tx54320\tx54880\tx55440\tx56000\li1571\fi-1572\pardirnatural
+
+\f0\fs30 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\b\fs44 \cf0 Thank You\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\b0\fs30 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 If you would like to donate to this project to aid in continuing development {\field{\*\fldinst{HYPERLINK "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=acehendo@gmail.com&lc=CA&item_name=Collin%20Henderson&currency_code=CAD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"}}{\fldrslt 
+\f2\fs28 click here}}. Thanks so much!\
+	\
+	 - 
+\f3\i\fs72 Collin Henderson
+\f0\i0\fs24 \CocoaLigature0 \
+\
+	
+\fs30 \CocoaLigature1  - 
+\f3\i\fs72 Jesse Almanrode}
